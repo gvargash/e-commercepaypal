@@ -1,0 +1,233 @@
+/*=============================================
+GLOBAL
+=============================================*/
+
+*{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Ubunt', sans-serif;
+}
+.img-acount-perzonalize{
+	border-image: 0px;
+	width: 30px;
+	height: 30px;
+	margin-bottom: -10px;
+}
+ul, ol{
+	padding:0px;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+	list-style: none;
+	text-decoration: none;
+}
+
+.barraSuperior{
+	background:#e040fb;
+}
+
+.barraSuperior a li{
+	color:#e040fb !important;;
+}
+
+.backColor, .backColor a{
+	background:#47bac1;
+	color:white !important;;
+}
+
+.fondoBreadcrumb{
+	margin-bottom:0px;
+	background: rgba(0,0,0,0);
+}
+
+/*=============================================
+REDES SOCIALES
+=============================================*/
+.redSocial{
+	width:30px;
+	height:30px;
+	text-align: center;
+	line-height:30px !important;
+}
+ #logo-empres{
+ 	margin-left: 35px;
+ 	margin-top: 8px;
+ }
+
+/*FACEBOOK*/
+
+.facebookBlanco{
+	color:white !important;
+}
+
+.facebookPinkDarken{
+	color:#880e4f !important;
+}
+
+.facebookColor{
+	background:#46639f !important;
+	color: #fff;
+
+}
+
+
+/*TWITTER*/
+
+.twitterColor{
+	background:#0ab2e6 !important;
+	color: #fff;
+}
+.twitterBlanco{
+	color:white !important;
+}
+
+.twitterPinkDarken{
+	color:#880e4f !important;
+}
+
+/*TOUTUBE*/
+
+.youtubeColor{
+	background:#d71617 !important;
+	color: #fff;
+}
+
+.youtubeBlanco{
+	color:white;
+}
+
+.youtubePinkDarken{
+	color:#880e4f !important;
+}
+
+
+/*GOOGLE PLUS*/
+
+.googleColor{
+	background: #d71617 !important;
+	color: #fff;
+}
+
+.googleBlanco{
+	color:white;
+}
+
+.googlePinkDarken{
+	color:#880e4f !important;
+}
+
+/*INSTAGRAM*/
+
+.instagramColor{
+	background:linear-gradient(45deg, #fca925, #ee1d5f,  #6350a2) !important;
+    color: #fff;
+}
+
+.instagramBlanco{
+	color:white !important;
+}
+
+.instagramPinkDarken{
+	color:#880e4f !important;
+}
+
+
+/*=============================================
+ERROR 404, VERIFICAR
+=============================================*/
+
+.error404. .verificar{
+	color:#333;
+}
+.verificar h4{
+	color:#A89D9D;
+}
+.verificar{
+	margin-top: 50px;
+    margin-bottom: 100px;
+	}
+/*=============================================
+SCROLL UP
+=============================================*/
+#scrollUp{
+	bottom: 84px;
+	right: 32px;
+	width: 35px;
+	height: 35px;
+	background: url(../img/plantilla/flecha.png);
+}
+/*=============================================
+		BREADCRUMB
+=============================================*/
+.fondoBreadcrumb{
+	background: rgb(0,0,0,0);
+	text-transform: uppercase;
+}
+.color-piepagina{
+	background-color: #e040fb  !important;
+
+}
+.fa-credit-card, .fa-paypal, .fa-ticket, .fa-money
+{
+	color: #880e4f;
+}
+/*=============================================
+		BOTONES FLOTANTES
+=============================================*/
+#contenedorSeccionBUttonPuls
+{
+	margin-top: 50px; margin-left: 20px; margin-bottom: 20px; margin-right: 20px;
+}
+
+/***********************/
+
+/***********************/
+.btn-danger
+{
+	background-color: red !important;
+}
+
+
+@media print{
+	.mostrar{
+		display: block;
+	}
+
+	.ocultar{
+		display: none;
+	}
+	a:after {
+	  content: "(link: " atr(href) ")";
+	 }
+
+}
+.script{
+	display: none;
+}
+@page {
+  @footnote {
+    float: none;
+    size: A4 landscape; 
+  }
+}
+
+
+@page:right {
+  @bottom-right {
+    content: counter(pagina);
+   }
+ }
+
+ @page {size: portrait;}
+@page rotada {size: landscape;}
+@page {
+  /*declaraciones*/
+ @top-left {
+    content: none;
+  }
+  @top-right {
+    content: "Pág. " counter(page);
+  }
+}

@@ -1,0 +1,144 @@
+/*=============================================
+REDES SOCIALES
+=============================================*/
+
+.redSocial{
+	width:30px;
+	height:30px;
+	text-align: center;
+	line-height:30px !important;
+}
+
+/*FACEBOOK*/
+
+.facebookBlanco{
+	color:white;
+	background: black;
+}
+
+.facebookPinkDarken{
+	color:#880e4f !important;
+}
+
+.facebookColor{
+	color:white;
+	background:#46639f;
+}
+
+/*YOUTUBE*/
+
+.youtubeColor{
+	color:white;
+	background:#d6513e;
+}
+
+.youtubeBlanco{
+	color:white;
+	background: black;
+}
+
+.youtubePinkDarken{
+	color:#880e4f !important;
+}
+/*TWITTER*/
+
+.twitterColor{
+	color:white;
+	background:#0ab2e6;
+}
+
+.twitterBlanco{
+	color:white;
+	background: black;
+}
+
+.twitterPinkDarken{
+	color:#880e4f !important;
+}
+
+/*GOOGLE PLUS*/
+
+.googleColor{
+	color:white;
+	background:#d71617;
+}
+
+.googleBlanco{
+	color:white;
+	background: black;
+}
+
+.googlePinkDarken{
+	color:#880e4f !important;
+}
+
+/*INSTAGRAM*/
+
+.instagramColor{
+	color:white;
+	background:linear-gradient(45deg, #fca925, #ee1d5f,  #6350a2);
+
+}
+
+.instagramBlanco{
+	color:white;
+	background: black;
+}
+
+.instagramPinkDarken{
+	color:#880e4f !important;
+}
+
+/**
+ FONDO CAJAS
+*/
+@media print{
+	#mostrar{
+		display: block;
+	}
+
+	#ocultar{
+		display: none;
+	}
+	a:after {
+	  content: "(link: " atr(href) ")";
+	 }
+
+	 #footerprint{
+		display: none;
+	}
+	#imprimirCabecera{
+		display: none;
+	}
+}
+
+@page {
+  @footnote {
+    float: none;
+    size: A4 landscape; 
+  }
+}
+
+
+@page:right {
+  @bottom-right {
+    content: counter(pagina);
+   }
+ }
+
+ @page {size: portrait;}
+@page rotada {size: landscape;}
+@page {
+  /*declaraciones*/
+ @top-left {
+    content: none;
+  }
+  @top-right {
+    content: "Pág. " counter(page);
+  }
+}
+
+
+#factuara{
+	display: none !important;
+}

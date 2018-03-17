@@ -1,0 +1,147 @@
+ /*=============================================
+	VALIDAR EL NOMBRE
+	=============================================*/
+
+	var nombre = $("#regNombreInput").val();
+
+	if(nombre != ""){
+
+		var expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
+
+		if(!expresion.test(nombre)){
+
+			$("#regNombreInput").parent().before(
+				swal({
+            title: 'ATENCION',
+            text: " En el campo nombre no se permiten numeros ni caracteres especiales!",
+            type: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#C407C6'
+        }))
+
+			return false;
+
+		}
+
+	}else{
+
+		$("#regNombreInput").parent().before(swal({
+            title: 'ATENCION',
+            text: "El campo nombre es obligatorio!",
+            type: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#C407C6'
+        }))
+
+		return false;
+	}
+
+/*=============================================
+	VALIDAR APPELLLIDO
+	=============================================*/
+var apellido=$("#regApellidoInput").val();
+
+if(apellido != ""){
+
+		var expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
+
+		if(!expresion.test(apellido)){
+
+			$("#regApellidoInput").parent().before(
+				swal({
+            title: 'ATENCION',
+            text: "No se permiten numeros ni caracteres especiales en el campo apellidos!",
+            type: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#C407C6'
+        }))
+
+			return false;
+
+		}
+
+	}else{
+
+		$("#regApellidoInput").parent().before(swal({
+            title: 'ATENCION',
+            text: "El camppo apellido es necesarios!",
+            type: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#C407C6'
+        }))
+
+		return false;
+	}
+
+	/*=============================================
+	VALIDAR EL EMAIL
+	=============================================*/
+
+	var email = $("#regCorreoInput").val();
+
+	if(email != ""){
+
+		var expresion = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+
+		if(!expresion.test(email)){
+
+			$("#regCorreoInput").parent().before(swal({
+            title: 'ATENCION',
+            text: "Escribe correctamente el correo!",
+            type: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#C407C6'
+        }))
+
+			return false;
+		}
+		} else{
+
+		$("#regCorreoInput").parent().before(swal({
+            title: 'ATENCION',
+            text: "El campo correo es obligatorio!",
+            type: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#C407C6'
+        }))
+
+		return false;
+	}
+
+
+	/*=============================================
+	VALIDAR CONTRASEÑA
+	=============================================*/
+
+	var password = $("#regClaveInput").val();
+
+	if(password != ""){
+
+		var expresion = /^[a-zA-Z0-9]*$/;
+
+		if(!expresion.test(password)){
+
+			$("#regClaveInput").parent().before(swal({
+            title: 'ATENCION',
+            text: "No se permiten caracteres especiales en la contraseña!",
+            type: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#C407C6'
+        }))
+
+			return false;
+
+		}
+
+	}else{
+
+		$("#regClaveInput").parent().before(swal({
+            title: 'ATENCION',
+            text: "Escribe tu clave, es obligatorio!",
+            type: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#C407C6'
+        }))
+
+		return false;
+	}
